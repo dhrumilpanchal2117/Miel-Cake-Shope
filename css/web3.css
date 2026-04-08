@@ -18,3 +18,13 @@ li{
 .bd-1{
     border: 1px solid #3b3b3b;
 }
+nav .d-flex li{
+    padding: 20px;
+}
+nav .d-flex li a{
+    text-decoration: none;
+    color: white;
+}
+.footer-border{
+    padding-bottom: 20; margin-bottom: 80px; border-bottom: 1px solid #3b3b3b;
+}
