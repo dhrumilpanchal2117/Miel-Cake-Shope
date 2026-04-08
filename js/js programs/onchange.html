@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Onchange Event</h1>
+    <p>Select New Car From the List</p>
+    <select id="myselect" onchange="myfun()">
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMD</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Volvo">Volvo</option>
+    </select>
+    <p id="demo"></p>
+    <script>
+        function myfun(){
+            var x=document.getElementById("myselect").value;
+            document.getElementById("demo").innerHTML="You Select:"+x;
+        }
+    </script>
+</body>
+</html>

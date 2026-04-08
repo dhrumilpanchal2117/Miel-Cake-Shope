@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">Copy Arry Into Another Arry</h1>
+    <script>
+        let ary1=[];
+        let ary2=[];
+        let n=parseInt(prompt("Enter the Value:"));
+
+        
+        for(let i=0;i<n;i++){
+            ary1[i]=parseInt(prompt("ary1:"));
+        }
+        for(i=0;i<n;i++){
+            ary2[i]=ary1[i];
+        }
+        for(i=0;i<n;i++){
+            document.writeln("<br>ary2[",i,"]=",ary2[i])
+        }
+    </script>
+</body>
+</html>

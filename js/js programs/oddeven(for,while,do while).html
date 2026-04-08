@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let cas = parseInt(prompt("Enter the Case:"));
+        let n1 = parseInt(prompt("Enter the Number1:"));
+        i = 1
+
+        switch (cas) {
+            case 1:
+                document.writeln("Case 1 Odd Even With for loop")
+                for (i = 1; i <= n1; i++) {
+                    if (i % 2 == 0) {
+                        document.writeln("<br>Even:", i)
+                       }
+                    else {
+                        document.writeln("<br>Odd:", i)
+                    }
+                }   
+                break;
+            case 2:
+                document.writeln("<br>Case 2 Odd Even With while loop")
+                while (i <= n1) {
+                    if (i % 2 == 0) {
+                        document.writeln("<br>Even:", i)
+                    }
+                     else {
+                        document.writeln("<br>Odd:", i)
+                    }
+                    i++
+                }
+                break;
+            case 3:
+                 document.writeln("<br>Case 3 Odd Even With Do-While loop")
+                do {
+                    if (i % 2 == 0) {
+                        document.writeln("<br>Even:", i)
+                    }
+                    else {
+                        document.writeln("<br>Odd:", i)
+                    }
+                    i++
+                } while (i <= n1)
+                break;
+        }
+    </script>
+</body>
+
+</html>

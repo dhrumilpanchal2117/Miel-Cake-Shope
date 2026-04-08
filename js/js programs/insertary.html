@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = parseInt(prompt("Enter the Value:"))
+        let ary = []
+
+        for (let i = 0; i < n; i++) {
+            ary[i] = parseInt(prompt())
+        }
+
+        let pos = parseInt(prompt("Enter the Position:"))
+        let val = parseInt(prompt("Enter the Value:"))
+
+        for (i = n - 1; i >= pos - 1; i--) {
+            ary[i + 1] = ary[i];
+        }
+
+        ary[pos - 1] = val;
+        for (i = 0; i <= n; i++) {
+            document.writeln("<br>ary[", i, "]=", ary[i]);
+        }
+    </script>
+</body>
+
+</html> 

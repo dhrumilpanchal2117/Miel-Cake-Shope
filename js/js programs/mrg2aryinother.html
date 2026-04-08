@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 align="center">Merge Two Arry Into Third Arry</h1>
+    <script>
+        let ary1 = [];
+        let ary2 = [];
+        let ary3 = [];
+        let n1 = parseInt(prompt("Enter the Value N1:"));
+        let n2 = parseInt(prompt("Enter the Value N2:"));
+        for (let i = 0; i < n1; i++) {
+            ary1[i] = parseInt(prompt("ary1:"));
+        }
+        for (i = 0; i < n2; i++) {
+            ary2[i] = parseInt(prompt("ary2:"));
+        }
+        for (i = 0; i < n1; i++) {
+            ary3[i] = ary1[i];
+        }
+        for (i = 0; i < n2; i++) {
+            ary3[n1 + i] = ary2[i];
+        }
+        for (i = 0; i < n1 + n2; i++) {
+            document.writeln("<br>ary3[", i, "]=", ary3[i])
+        }
+    </script>
+</body>
+
+</html>

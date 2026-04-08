@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let math=parseInt(prompt("Enter the Value of Maths:"));
+        let sci=parseInt(prompt("Enter the Value of Science:"));
+        let guj=parseInt(prompt("Enter the Value of Gujarati:"));
+        let hin=parseInt(prompt("Enter the Value of Hindi:"));
+        let eng=parseInt(prompt("Enter the Value of English:"));
+
+        sum=parseInt(math+sci+guj+hin+eng)
+        per=parseFloat(sum/5)
+
+        document.writeln("Maths:",math)
+        document.writeln("<br>Science:",sci)
+        document.writeln("<br>Gujarati:",guj)
+        document.writeln("<br>Hindi:",hin)
+        document.writeln("<br>English:",eng)
+        document.writeln("<br>Total Of Subjects:",sum)
+        document.writeln("<br>Percentage:",per)
+        if(math>=eng&&guj&&hin&&sci){
+            document.writeln("<br>Maths is Max:",math)
+        }
+        else if(sci>=eng&&guj&&hin&&math){
+            document.writeln("<br>Science is Max:",sci)
+        }
+        else if(guj>=eng&&math&&hin&&sci){
+            document.writeln("<br>Gujrati is Max:",guj)
+        }
+        else if(hin>=eng&&guj&&math&&sci){
+            document.writeln("<br>Hindi is Max:",hin)
+        }
+        else if(eng>=math&&guj&&hin&&sci){
+            document.writeln("<br>English is Max:",eng)
+        }
+        if(math<=eng&&guj&&hin&&sci){
+            document.writeln("<br>Maths is Min",math)
+        }
+        else if(sci<=eng&&guj&&hin&&math){
+            document.writeln("<br>Science is Min:",sci)
+        }
+        else if(guj<=eng&&math&&hin&&sci){
+            document.writeln("<br>Gujrati is Min:",guj)
+        }
+        else if(hin<=eng&&guj&&math&&sci){
+            document.writeln("<br>Hindi is Min:",hin)
+        }
+        else if(eng<=math&&guj&&hin&&sci){
+            document.writeln("<br>English is Min:",eng)
+        }
+        if(per>=90){
+            document.writeln("<br>A Grade")
+        }
+        else if(per>=80){
+            document.writeln("<br>B Grade")
+        }
+        else if(per>=70){
+            document.writeln("<br>C Grade")
+        }
+        else if(per>=60){
+            document.writeln("<br>D Grade")
+        }
+        else if(per<=50){
+            document.writeln("<br>E Grade")
+        }
+        if(math<=35|| sci<=35||eng<=35||guj<=35||hin<=35){
+            document.writeln("<br>Student Is FAIL")
+        }
+        else{
+            document.writeln("<br>Student Is PASS")
+        }
+    </script>
+</body>
+</html> 

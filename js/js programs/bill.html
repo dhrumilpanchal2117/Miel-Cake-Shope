@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let unit=parseFloat(prompt("Enter the unit:"));
+
+        if(unit<=50){
+            res=unit*0.50
+        }
+        else if(unit<=100 && unit>=50){
+            res=unit*0.75
+        }
+        else if(unit>=100&&unit<=200){
+            res=unit*1.25
+        }
+        else if(unit>=100){
+            res=unit*1.50
+        }
+        document.writeln("Result:",res)
+        surcharge=res*20/100
+        document.writeln("<br>Surcharge:",surcharge)
+    </script>
+</body>
+</html>

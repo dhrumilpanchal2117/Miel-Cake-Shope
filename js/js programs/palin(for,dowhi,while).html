@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cas = parseInt(prompt("Enter the Case:"));
+        let n1 = parseInt(prompt("Enter the Number1:"));
+       i=1
+        switch (cas) {
+            case 1:
+                 document.writeln("Case 1 Plaindrome With for loop")
+                for (i = 1; i <= n1; i++) {
+                    h=i
+                    d=h
+                    pli=0
+                    while(d!=0){
+                        r=d%10
+                        pli=pli*10+r
+                        d=parseInt(d/10)
+                    }
+                    if(pli==h){
+                        document.writeln("<br>Yes:", pli)
+                    }
+                }
+                break;
+            case 2:
+                document.writeln("<br>Case 2 Plaindrome With while loop")
+                while(i<=n1){
+                    h=i
+                    pli=0
+                    while(h!=0){
+                        r=h%10
+                        pli=pli*10+r
+                        h=parseInt(h/10)
+                    }
+                    if(pli==i){
+                        document.writeln("<br>Yes:", pli)
+                    }
+                    i++
+                }
+                break;
+            case 3:
+                     document.writeln("<br>Case 3 Plaindrome With Do-While loop")
+                do {
+                    h=i
+                    pli=0
+                    do{
+                        r=h%10
+                        pli=pli*10+r
+                        h=parseInt(h/10)
+                    }while(h!=0)
+                    if(pli==i){
+                        document.writeln("<br>Yes:", pli)
+                    }
+                    i++
+                } while (i<=n1)
+                break;
+        }
+    </script>
+</body>
+</html>

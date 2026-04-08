@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = parseInt(prompt("Enter the value:"))
+        let ary = []
+
+        for (let i = 0; i < n; i++) {
+            ary[i] = parseInt(prompt())
+        }
+        for (let i = 0; i < n; i++) {
+            document.writeln("<br>ary[", i, "]=", ary[i])
+        }
+        let find = parseInt(prompt("Finding Value:"))
+        let rep = parseInt(prompt("Replace Value:"))
+
+        for (i = 0; i < n; i++) {
+            if (ary[i] == find) {
+                ary[i] = rep
+            }
+        }
+        document.writeln("<br><br>")
+        for (let i = 0; i < n; i++) {
+            document.writeln("<br>ary[", i, "]=", ary[i])
+        }
+    </script>
+</body>
+
+</html>

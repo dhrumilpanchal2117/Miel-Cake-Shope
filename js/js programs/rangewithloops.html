@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cas = parseInt(prompt("Enter the Case:"));
+        let n1 = parseInt(prompt("Enter the Number1:"));
+        let n2 = parseInt(prompt("Enter the Number2:"));
+        switch (cas) {
+            case 1:
+                 document.writeln("Case 1 for loop")
+                for (i = n1; i <= n2; i++) {
+                    document.writeln("<br>", i)
+                }
+                break;
+            case 2:
+                document.writeln("<br>Case 2 While loop")
+                while (n1 - 1 != n2) {
+                    document.writeln("<br>",n1)
+                    n1++
+                }
+                break;
+            case 3:
+                     document.writeln("<br>Case 3 Do while")
+                do {
+                    document.writeln("<br>",n1)
+                    n1++
+                } while (n1 - 1 != n2)
+                break;
+        }
+    </script>
+</body>
+</html>
